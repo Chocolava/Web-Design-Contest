@@ -1,0 +1,120 @@
+<html>
+	<script>
+		var x = window.chrome;
+		if(!x)
+			window.location.href ="Workinprogress.html";
+		if (window.clipboardData)
+            window.location.href ="Workinprogress.html";
+	</script>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<script>
+			function click1()
+			{	document.getElementById('div1').style.display='block';
+				document.getElementById('div2').style.display='none';
+				document.getElementById('div3').style.display='none';
+				document.getElementById('but1').style.color='#1589ff';
+				document.getElementById('but2').style.color='#b6b6b4';
+				document.getElementById('but3').style.color='#b6b6b4';
+				document.getElementById('titlediv').style.color='#1589ff';
+			}
+			function click2()
+			{	document.getElementById('div2').style.display='block';
+				document.getElementById('div1').style.display='none';
+				document.getElementById('div3').style.display='none';
+				document.getElementById('but2').style.color='#008000';
+				document.getElementById('but1').style.color='#b6b6b4';
+				document.getElementById('but3').style.color='#b6b6b4';
+				document.getElementById('titlediv').style.color='#008000';
+			}
+			function click3()
+			{	document.getElementById('div3').style.display='block';
+				document.getElementById('div2').style.display='none';
+				document.getElementById('div1').style.display='none';
+				document.getElementById('but3').style.color='#f62217';
+				document.getElementById('but2').style.color='#b6b6b4';
+				document.getElementById('but1').style.color='#b6b6b4';
+				document.getElementById('titlediv').style.color='#f62217';
+			}
+			function aboutus()
+			{	window.location.href="aboutus.html";
+			}
+			function removecover()
+			{	var elem = document.getElementById('coverdiv');
+				elem.parentNode.removeChild(elem);
+				var elem1 = document.getElementById('cover');
+				var elem2 = document.getElementById('welcomemsg');
+				elem1.parentNode.removeChild(elem1);
+				elem2.parentNode.removeChild(elem2);
+			}
+			function cover()
+			{	document.getElementById('coverdiv').style.height='0';
+				//document.getElementById('coverdiv').style.width='0';
+				document.getElementById('coverdiv').style.z-index='-5';	
+				document.getElementById('welcomemsg').style.height='0';	
+				document.getElementById('cover').style.height='0';
+				document.getElementById('coverdiv').style.display='none';	
+				document.getElementById('cover').style.display='none';	
+				removecover();
+			}
+			function emaillink()
+			{	window.open("mailto:acls.acm@gmail.com","_blank");
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		<div id="titlediv"><a href="http://www.acm.org"><img src="acm.jpg" style="float:left;"></a><a href="http://www.igit.ac.in"><img src="igit.jpg" style="float:right;"></a>Website Design<br><span style="font-size:24px;letter-spacing:0;cursor:pointer;" onclick="window.location.href='contestdetails.html'">Contest Details</span></div>
+		<div id="display">
+			<div id="tabs">
+				<button id="but1" class="button" onclick="click1()">Team Login</button>
+				<button id="but2" class="button" onclick="click2()">Admin Login</button>
+				<button id="but3" class="button" onclick="click3()">Evaluator Login</button>
+			</div>
+			<div id="content">
+				<div id="div1" class="div">
+					<form name="f1" action="signinstud.php" method="post">
+						<label for="Username">Login ID<pre>  </pre></label> <input type="text" name="user1" style="border-color:#1589ff"><br><br>
+						<label for="Password">Password<pre>  </pre></label> <input type="password" name="pass1" style="border-color:#1589ff"><br><br><br>
+						<input type="submit" value="Enter" id="enter1"><br>
+					</form>
+				</div>
+				<div id="div2" class="div">
+					<form name="f2" action="administrator.php" method="post">
+						<label for="Username" style="background-color:#008000">Login ID<pre>  </pre></label> <input type="text" name="user1" style="border-color:#008000"><br><br>
+						<label for="Password" style="background-color:#008000">Password<pre>  </pre></label> <input type="password" name="pass1" style="border-color:#008000"><br><br><br>
+						<input type="submit" value="Enter" id="enter2"><br>
+					</form>
+				</div>
+				<div id="div3" class="div">
+					<form name="f3" action="signineval.php" method="post">
+						<label for="Username" style="background-color:#f62217">Login ID<pre>  </pre></label> <input type="text" name="user1" style="border-color:#f62217"><br><br>
+						<label for="Password" style="background-color:#f62217">Password<pre>  </pre></label> <input type="password" name="pass1" style="border-color:#f62217"><br><br><br>
+						<input type="submit" value="Enter" id="enter3"><br>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="signup">
+			<form name= "f4" action="signupstud.php" method="post">
+				<input type="submit" value="Sign Up Now!" id="signup">
+			</form>
+		</div>
+		<div id="aboutus">
+			<div id="but4" class="icons">
+				Connect with us on Facebook:
+				<a href="https://www.facebook.com/igit.espectro?fref=ts"><i id="facebook" class="icon-facebook-sign" style="font-size:1.2em;color:grey;"></i></a>
+				<!--a href="mailto:acls.acm@gmail.com"><i id="gplus" class="icon-google-plus" style="font-size:1.2em;margin-left:10px;color:grey;"></i><a>
+				<a href="mailto:acls.acm@gmail.com"><i id="mail" class="icon-inbox" style="font-size:1.2em;margin-left:10px;color:grey;"></i><a-->
+			</div>
+			<button id="but5" onclick="contactus()">Contact Us</button>
+			<button id="but6" onclick="emaillink()">Email Us</button>
+		</div>
+		<div id="footer">
+			Developed By: Niharika, Kajol, Ragini of IT and Sakshi of CSE department of IGDTUW
+		</div>
+	</body>
+</html>

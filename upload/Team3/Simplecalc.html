@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>My Calculator</title>
+	</head>
+	<body>
+		<form name="Calc">
+			<center><b><h1>A simple calculator</h1></b>
+			<p>Enter first number: <input type="number" name="num1"> Enter second number:<input type="number" name="num2"></p>
+			<p>Output: <input type="text" name="answer">
+			<p>
+				<input type="button" value="Add" onclick="Calc.answer.value = parseInt(Calc.num1.value) + parseInt(Calc.num2.value)">
+				<input type="button" value="Subtract" onclick="Calc.answer.value = parseInt(Calc.num1.value) - parseInt(Calc.num2.value)">
+				<input type="button" value="Multiply" onclick="Calc.answer.value = parseInt(Calc.num1.value) * parseInt(Calc.num2.value)">
+				<input type="button" value="Divide" onclick="Calc.answer.value = parseInt(Calc.num1.value) / parseInt(Calc.num2.value)">
+
+			</p>
+			</center>
+		</form>
+	</body>
+</html>

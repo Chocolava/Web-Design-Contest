@@ -1,0 +1,97 @@
+#titlediv
+{	height:100px;
+				width:98%;
+				letter-spacing:4px;
+				line-height:80px;
+				text-align:center;
+				vertical-align:middle;
+				font-size:85px;
+				z-index:2;
+				font-family:Corbel;
+				/*text-shadow: 5px 5px 10px #6d6968;*/
+				color:#adacac;
+				transition: All 0.5s ease;
+}
+#carddeck
+{	height:400px;
+	width:78%;
+	margin: 40 auto;
+}
+#one
+{	text-decoration:none;
+	margin-left:250px;
+	font-size:24px;
+	color:#8b8989;
+}
+#two
+{	text-decoration:none;
+	margin-left:760px;
+	font-size:24px;
+	color:#8b8989;
+}
+.fronttext
+{
+	color:white;
+	font-weight:400;
+	font-size:26px;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	float: left;
+	-webkit-perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 240px;
+	height: 400px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	border:5px solid #adacac;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	background-color: white;
+	border:5px solid #adacac;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}

@@ -1,0 +1,131 @@
+			#titlediv
+			{	height:90px;
+				width:100%;
+				letter-spacing:4px;
+				line-height:70px;
+				text-align:center;
+				vertical-align:middle;
+				font-size:70px;
+				font-family:Corbel;
+				color:#008080;
+			}
+			#details
+			{	height:500px;
+				width:100%;
+				position:relative;
+				margin-top:50px;
+			}
+			@font-face
+			{	font-family: 'Corbel';
+				src: url('Fonts/corbel.ttf');
+			}
+			label:not(#check1)
+			{	text-align:center;
+				line-height:30px;
+				color:white;
+				background-color:#008080;
+				float:left;
+				margin-left:40px;
+				width:180px;
+				height:30px;
+				border-top-left-radius:15px;
+				border-bottom-left-radius:15px;
+				font-family:Corbel;
+				font-size:20px;
+				font-weight:400;
+			}
+			input:focus 
+			{ 
+				outline:none;
+				border-color:#008080;
+				box-shadow:0 0 10px #008080;
+			}
+			.hint
+			{	height:28px;
+				width:250px;
+				position:relative;
+				margin-left:470px;
+				font-size:20px;
+				color:#b6b6b4;
+				line-height:28px;
+				vertical-align:middle;
+				border:1px solid #008080;
+				display:none;
+			}
+			input[type=password]
+			{	font-family:Corbel;
+				height:30px;
+				width:230px;
+				float:left;
+				font-size:17px;
+				border-top-right-radius:15px;
+				border-bottom-right-radius:15px;
+				border:1px solid #008080;
+			}
+			input[type=text]
+			{	font-family:Corbel;
+				height:30px;
+				width:230px;
+				float:left;
+				font-size:20px;
+				border-top-right-radius:15px;
+				border-bottom-right-radius:15px;
+				border:1px solid #008080;
+			}
+			#memdetails
+			{	height:200px;
+				border:2px solid #008080;
+				width:88%;
+				position:relative;
+				margin-top:35px;
+				margin-left:50px;
+			}
+			#memdetails input[type=text]
+			{	width:24%;
+				text-align:center;
+				margin:1px;
+				height:19.6%;
+				border:1px solid #008080;
+				border-radius:0;
+				float:left;
+				border-right:none;
+				border-top:none;
+				margin-top:0;
+			}
+			#enter1
+			{	text-align:center;
+				line-height:30px;
+				color:white;
+				background-color:#008080;
+				float:left;
+				margin-left:40px;
+				width:180px;
+				height:40px;
+				border-style:none;
+				border-radius:20px;
+				font-family:Corbel;
+				font-size:20px;
+				font-weight:400;
+			}
+			#enter1:hover
+			{	border:2px solid #008080;
+				background-color:white;
+				color:#008080;
+				cursor:pointer;
+			}
+			.error_mssg
+			{
+			width:150px;
+			margin-left:220px;
+			margin-right:50px;
+			font-size:15px;
+			color:red;
+			}
+			.error
+			{
+			width:300px;
+			margin-left:50;
+			font-size:15px;
+			color:green;
+			}	
+			

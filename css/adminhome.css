@@ -1,0 +1,82 @@
+button
+{ 
+    color:white;
+	background-color:#348017;/*#f88017;#b40431;*/
+	border-bottom-left-radius:0;
+	width:80%;
+	height:57px;
+	border-top-left-radius:0;
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	border:1px solid white;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+	font-family:Corbel;
+	font-weight:200;
+	font-size:18px;
+}
+.button:hover
+{	width:100%;
+	background-color:#cdc9c9;
+	cursor:pointer;
+}
+form
+{	position:absolute;
+	margin-top:160px;
+	margin-left:220px;
+}
+label
+{	
+	width:250px;
+	float:left;
+	font-family:Corbel;
+	height:40px;
+	color:#348017;
+	font-weight:400;
+	text-align:center;
+	font-size:24px;
+}
+@font-face
+{	font-family: 'HelveticaNeue';
+	src: url('Fonts/HelveticaNeue/helvetica-neue1.ttf');
+}
+@font-face
+{	font-family: 'GothamMed';
+	src: url('Fonts/Gotham-Medium.otf');
+}
+@font-face
+{	font-family: 'GothamBold';
+	src: url('Fonts/Gotham-Bold.otf');
+}
+@font-face
+{	font-family: 'Corbel';
+	src: url('Fonts/corbel.ttf');
+}
+input
+{	
+	width:200px;
+	float:left;
+	height:30px;
+}
+input[type=submit]:not(#fileupload)
+{  float:right;width: 200px; font-family:Corbel; font-size:24px; font-weight:400; height:50px;background-color:#348017;color:white;
+	border-radius:25px; border:3px solid white;
+}
+body
+{	background-color:white; /*#e5e4e2;*/
+}
+.but1:hover
+{	background-color:#a1c935;
+	cursor:pointer;
+}
+input[type=submit]:hover
+{	cursor:pointer;
+}

@@ -1,0 +1,35 @@
+button
+{ 
+    color:white;
+	background-color:#357ec7;
+	border-bottom-left-radius:0;
+	width:80%;
+	height:70px;
+	border-top-left-radius:0;
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+	border:1px solid white;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+	font-family:Corbel;
+	font-weight:200;
+	font-size:18px;
+}
+.button:hover
+{	width:100%;
+	background-color:#b6b6b4;/*#e8adaa;*/
+}
+form
+{	
+	margin:auto;
+	position:relative;
+	margin-top:50px;
+}
